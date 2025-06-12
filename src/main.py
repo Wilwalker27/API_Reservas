@@ -5,7 +5,7 @@ app = FastAPI(
     title="API de Reservas",
     description="API para sistema de reservas de restaurante",
     version="1.0.0",
-)
+) 
 
 app.add_middleware(
     CORSMiddleware,
