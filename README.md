@@ -83,6 +83,7 @@ Acesse a documentação interativa em:
 ## 👥 Autores
 
 - William Rigne - [GitHub](github.com/Wilwalker27)
+- Antonio Favero - [Linkedin](https://www.linkedin.com/in/antonio-cardoso-favero-8a1301296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
 ## 📄 Licença
 
