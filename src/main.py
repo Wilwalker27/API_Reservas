@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from .controllers import reservation_controller
 
 app = FastAPI(
     title="API de Reservas",
@@ -13,6 +14,13 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+)
+
+# Incluir as rotas de reservas
+app.include_router(
+    reservation_controller.router,
+    prefix="/reservations",
+    tags=["reservations"]
 )
 
 @app.get("/")
