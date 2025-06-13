@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import relationship
 from ..database import Base
 
 class Table(Base):
@@ -8,3 +9,5 @@ class Table(Base):
     number = Column(Integer, unique=True, index=True)
     capacity = Column(Integer)
     status = Column(String)  # 'available', 'reserved', 'occupied'
+
+    reservations = relationship("Reservation", back_populates="table")
